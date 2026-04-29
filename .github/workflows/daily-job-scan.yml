@@ -1,0 +1,73 @@
+name: Daily Job Discovery
+
+# Automation: Scan job boards daily for new India/Remote junior roles
+# Trigger: 9:00 AM IST (30 3 UTC) daily + manual trigger
+# Profile: B.Tech 2027 Grad, Full Stack + AI/ML, India-based or Remote
+# Output: Auto-commits new leads to data/pipeline.md
+
+on:
+  schedule:
+    - cron: "30 3 * * *" # 9:00 AM IST (UTC+5:30) = 03:30 UTC
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run job scan
+        run: node scan.mjs
+        env:
+          NODE_ENV: production
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No new jobs found in this scan."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ New jobs discovered! Committing..."
+          fi
+
+      - name: Configure Git
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --global user.name "Career-Ops-Bot"
+          git config --global user.email "bot@career-ops.local"
+
+      - name: Stage changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: git add data/pipeline.md
+
+      - name: Commit and push
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git commit -m "🤖 Auto-scan: New India/Remote junior roles discovered - $(date +'%Y-%m-%d %H:%M IST')"
+          git push origin $(git rev-parse --abbrev-ref HEAD)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Job scan completed
+        run: echo "✨ Daily job scan completed successfully at $(date)"
