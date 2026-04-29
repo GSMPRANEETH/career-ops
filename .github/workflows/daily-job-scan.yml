@@ -35,6 +35,11 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Prepare Data Directory
+        run: |
+          mkdir -p data
+          touch data/pipeline.md
+
       - name: Run job scan
         run: node scan.mjs
         env:
