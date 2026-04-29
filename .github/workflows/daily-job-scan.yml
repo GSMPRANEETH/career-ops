@@ -48,12 +48,12 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet && git diff --staged --quiet; then
+          # Force add the data directory so Git sees the new pipeline.md
+          git add -f data/
+          if git diff --staged --quiet; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "ℹ️  No new jobs found in this scan."
           else
             echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "✅ New jobs discovered! Committing..."
           fi
 
       - name: Configure Git
