@@ -725,3 +725,78 @@
 - [ ] https://jobs.ashbyhq.com/legora/f81a4b5e-7ef3-4946-a147-f6c0645e98ca | Legora | Software Engineer (AI Focus)
 - [ ] https://jobs.ashbyhq.com/legora/4ff6e0e2-9b9b-48f6-85e1-546e70572833 | Legora | Brand Associate 
 
+
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5165641008 | Anthropic | Account Executive, Beneficial Deployments (French Speaking)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5161988008 | Anthropic | Account Executive, Beneficial Deployments (Portuguese Speaking)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5161986008 | Anthropic | Account Executive, Beneficial Deployments (Spanish Speaking)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5117581008 | Anthropic | Applied AI Architect
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4977626008 | Anthropic | Applied AI Architect, Industries
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5112486008 | Anthropic | Applied AI Architect, Partnerships
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5193973008 | Anthropic | Applied AI Architect, Startups
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5014500008 | Anthropic | Applied AI Engineer
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5068226008 | Anthropic | Applied AI Engineer, Beneficial Deployments
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5121563008 | Anthropic | Forward Deployed Engineer
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5112018008 | Anthropic | Research Engineer, Production Model Post-Training
+- [ ] https://job-boards.eu.greenhouse.io/parloa/jobs/4694431101 | Parloa | Forward Deployed Engineer, DevOps
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7603334 | Intercom | Account Executive, Emerging AI Products
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7824137 | Intercom | AI Infrastructure Engineer
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7434876 | Intercom | Solutions Architect
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7573187 | Intercom | Solutions Engineer
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7593406 | Intercom | Solutions Engineer - LATAM (Portuguese Speaking)
+- [ ] https://job-boards.greenhouse.io/vercel/jobs/5804110004 | Vercel | Solutions Architect
+- [ ] https://jobs.ashbyhq.com/deepgram/8884965c-8a55-414c-ba86-a52d527f5dff | Deepgram | Solutions Engineer, Enterprise
+- [ ] https://jobs.ashbyhq.com/deepgram/a58e4a11-7f98-4686-98e8-2612b52d7bbd | Deepgram | Forward Deployed Engineer, Deepgram for Restaurants
+- [ ] https://job-boards.greenhouse.io/gleanwork/jobs/4651990005 | Glean | Founding Forward Deployed Engineer
+- [ ] https://job-boards.greenhouse.io/gleanwork/jobs/4508312005 | Glean | Solutions Architect 
+- [ ] https://job-boards.eu.greenhouse.io/speechmatics/jobs/4823663101 | Speechmatics | Solutions Engineer
+- [ ] https://jobs.ashbyhq.com/cohere/fea8cc38-1a55-4f1c-a652-8c39c66138fc | Cohere | Forward Deployed Engineer, Infrastructure Specialist
+- [ ] https://jobs.ashbyhq.com/cohere/75c0032c-7200-48bf-9d6d-355880dd93d9 | Cohere | Forward Deployed Engineer, Agentic Platform
+- [ ] https://jobs.ashbyhq.com/cohere/1bc73d85-e6f4-4338-b53a-9ffb609a950d | Cohere | Solutions Architect - Public Sector
+- [ ] https://jobs.ashbyhq.com/sierra/e9f5fdb6-91ee-4c55-9230-41ec8865650e | Sierra | Software Engineer, Agent
+- [ ] https://jobs.ashbyhq.com/sierra/c25ca18c-dbe6-439d-9a40-ce23b40c323c | Sierra | Strategist, Agent Development
+- [ ] https://jobs.ashbyhq.com/sierra/3437596e-e545-42a9-af82-9947fabf828c | Sierra | Strategist, Agent Development (Spanish speaking)
+- [ ] https://jobs.ashbyhq.com/sierra/ed38b1c1-2862-4e40-9894-3c6f20f7a785 | Sierra | Strategist, Agent Development (French speaking)
+- [ ] https://jobs.ashbyhq.com/sierra/569ba29b-de35-4bce-a16c-e27cb9b683ea | Sierra | GTM Operations Analyst, Agent Development
+- [ ] https://jobs.ashbyhq.com/langchain/7bb07844-ffa2-4a76-932e-204ea6a406b5 | LangChain | Product Marketing - Agent Infrastructure
+- [ ] https://jobs.ashbyhq.com/langchain/825b6d91-bc5e-4165-8a7c-2022a2248f7e | LangChain | GTM Engineer
+- [ ] https://job-boards.greenhouse.io/later/jobs/8366755002 | Later | Domain Architect
+- [ ] https://jobs.ashbyhq.com/attio/010b8206-5968-4a03-8052-d9339762f766 | Attio | Solutions Engineer [Pre and Post-Sales] - SMB
+- [ ] https://jobs.ashbyhq.com/DeepL/fe9a17ec-3843-4f15-bb07-6c2f7a7d81e7 | DeepL | Enterprise Account Executive | UKI
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7696087003?gh_jid=7696087003 | Celonis | Client Engagement Partner - AI-Driven Transformation & Process Intelligence
+- [ ] https://getyourguide.careers/jobs/7738914?gh_jid=7738914 | GetYourGuide | Associate Software Engineer
+- [ ] https://n26.com/en-eu/careers/positions/7866308?gh_jid=7866308 | N26 | Site Reliability Engineer - Platform Engineering
+- [ ] https://careers.hellofresh.com/global/en/job/7775847?gh_jid=7775847 | HelloFresh | Maintenance Technician I 
+- [ ] https://careers.hellofresh.com/global/en/job/7839242?gh_jid=7839242 | HelloFresh | Maintenance Technician II
+- [ ] https://careers.hellofresh.com/global/en/job/7792018?gh_jid=7792018 | HelloFresh | Quality Control Associate
+- [ ] https://careers.hellofresh.com/global/en/job/7763090?gh_jid=7763090 | HelloFresh | Sanitation Associate 
+- [ ] https://careers.hellofresh.com/global/en/job/7509162?gh_jid=7509162 | HelloFresh | Warehouse Associate
+- [ ] https://sumup.com/careers/positions/7993293002?gh_jid=7993293002 | SumUp | Commercial(e) Terrain Indépendant(e)
+- [ ] https://sumup.com/careers/positions/7875407002?gh_jid=7875407002 | SumUp | Commercial(e) Terrain - Indépendant (Freelance)
+- [ ] https://sumup.com/careers/positions/8099530002?gh_jid=8099530002 | SumUp | Commercial Terrain - Indépendant (Freelance)
+- [ ] https://sumup.com/careers/positions/8446060002?gh_jid=8446060002 | SumUp | Customer Support Agent
+- [ ] https://sumup.com/careers/positions/8150303002?gh_jid=8150303002 | SumUp | IT Internal Auditor
+- [ ] https://sumup.com/careers/positions/8376123002?gh_jid=8376123002 | SumUp | Junior Early Growth Specialist
+- [ ] https://www.scandit.com/careers/job-description/?gh_jid=7434825 | Scandit | Computer Vision Research Internship: Image to Sequence Modeling (e.g. Transformers)
+- [ ] https://wayve.firststage.co/jobs?gh_jid=8501381002 | Wayve | Customer Integration Engineer
+- [ ] https://wayve.firststage.co/jobs?gh_jid=8422027002 | Wayve | Software Integration Engineer (6 months Contract) 
+- [ ] https://jobs.ashbyhq.com/synthesia/3cb4a9ce-7f2d-4d37-86a5-f0fa9aa3aa7f | Synthesia | Technical Support Associate
+- [ ] https://jobs.ashbyhq.com/lovable/642dfe37-d5f5-4cf7-a38d-d6dac3dde58f | Lovable | Solutions Architect
+- [ ] https://jobs.ashbyhq.com/legora/b2fca281-1bd1-4291-a4d7-ec819447ec82 | Legora | Legal Engineer Associate
+- [ ] https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d | Perplexity | Internship - Search Machine Learning Engineer
+- [ ] https://jobs.lever.co/spotify/6310dcab-11f4-473d-9496-93e7c59c2911 | Spotify | Associate Client Partner - Emerging & Scaled (New Business)
+- [ ] https://jobs.lever.co/mistral/fd865fe4-7344-43b0-9d8d-600e8b366725 | Mistral AI | AI Developer Advocate
+- [ ] https://jobs.lever.co/palantir/ff1029bd-bb6d-4d78-a03e-5f9744d0b798 | Palantir | Forward Deployed AI Engineer
+- [ ] https://jobs.lever.co/palantir/4cba9c95-d16f-440d-83e7-2352480f689f | Palantir | Forward Deployed Enablement Engineer - Customer Success
+- [ ] https://jobs.lever.co/palantir/8fcae765-de9a-4990-ba84-e65b524d683b | Palantir | Forward Deployed Infrastructure Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/689e6869-01bc-40f1-b580-adb33a020065 | Palantir | Forward Deployed Reliability Engineer
+- [ ] https://jobs.lever.co/palantir/1bb19522-3936-4adc-9ced-c3df8b5900b9 | Palantir | Forward Deployed Software Engineer
+- [ ] https://jobs.lever.co/palantir/909875b4-1940-41bd-b08d-a269c7235100 | Palantir | Forward Deployed Software Engineer - AUS Government
+- [ ] https://jobs.lever.co/palantir/c62264f5-5da8-40fe-9b44-f7f0f0012e11 | Palantir | Forward Deployed Software Engineer - Autonomous Systems C2
+- [ ] https://jobs.lever.co/palantir/84131e3f-455e-47fc-9c11-898d95f09048 | Palantir | Forward Deployed Software Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/5f7a90e7-f927-47bf-90ed-52d17c58ae02 | Palantir | Product Designer, New Grad - US Government
+- [ ] https://jobs.lever.co/palantir/7d69cf8a-06fd-4f05-bd84-27149db29c4d | Palantir | Software Engineer, Internship
+- [ ] https://jobs.lever.co/palantir/d372c805-d0cd-4a10-9522-fbecc78d6f3e | Palantir | Software Engineer, New Grad
+- [ ] https://jobs.lever.co/palantir/7d75bed5-45d8-4876-840a-2d92ea79c98d | Palantir | Software Engineer, New Grad - Infrastructure
+- [ ] https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a | Palantir | Software Engineer, New Grad - Production Infrastructure
+- [ ] https://jobs.lever.co/palantir/78dbb616-cf3c-489c-9eb2-e6fc9bd9993a | Palantir | Systems Engineer - Business Systems
+- [ ] https://jobs.lever.co/palantir/9410b487-c6c0-4178-903c-3311ce6b1861 | Palantir | Year at Palantir, Internship
