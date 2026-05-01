@@ -800,3 +800,32 @@
 - [ ] https://jobs.lever.co/palantir/e1a6c138-98bf-45e2-97f7-2c70371cc38a | Palantir | Software Engineer, New Grad - Production Infrastructure
 - [ ] https://jobs.lever.co/palantir/78dbb616-cf3c-489c-9eb2-e6fc9bd9993a | Palantir | Systems Engineer - Business Systems
 - [ ] https://jobs.lever.co/palantir/9410b487-c6c0-4178-903c-3311ce6b1861 | Palantir | Year at Palantir, Internship
+
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7609852 | Intercom | Account Executive, Emerging AI Products
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7824142 | Intercom | AI Infrastructure Engineer
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4461444008 | Anthropic | Applied AI Architect, Industries
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5057258008 | Anthropic | Applied AI Architect, Startups
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5205884008 | Anthropic | Commercial Counsel, Networking & Datacenter Operations
+- [ ] https://job-boards.greenhouse.io/gleanwork/jobs/4659412005 | Glean | Founding Forward Deployed Engineer
+- [ ] https://job-boards.eu.greenhouse.io/speechmatics/jobs/4823682101 | Speechmatics | Solutions Engineer
+- [ ] https://job-boards.greenhouse.io/later/jobs/8366757002 | Later | Domain Architect
+- [ ] https://jobs.ashbyhq.com/sierra/43e6eda7-6e46-43e8-82a5-6e5035f063bb | Sierra | Software Engineer, Agent
+- [ ] https://jobs.ashbyhq.com/sierra/08d96098-7213-44af-98da-f62366189f3b | Sierra | Strategist, Agent Development
+- [ ] https://careers.hellofresh.com/global/en/job/7870753?gh_jid=7870753 | HelloFresh | Payroll Associate - International
+- [ ] https://careers.hellofresh.com/global/en/job/7821599?gh_jid=7821599 | HelloFresh | Quality Control Associate
+- [ ] https://sumup.com/careers/positions/7988613002?gh_jid=7988613002 | SumUp | Commercial Terrain - Indépendant (Freelance)
+- [ ] https://sumup.com/careers/positions/8340156002?gh_jid=8340156002 | SumUp | Customer Support Agent- French
+- [ ] https://sumup.com/careers/positions/8234319002?gh_jid=8234319002 | SumUp | IT Internal Auditor
+- [ ] https://sumup.com/careers/positions/8529486002?gh_jid=8529486002 | SumUp | MLRO- GRC & Risk
+- [ ] https://jobs.ashbyhq.com/legora/f375a300-e345-4d14-922f-12229f0c7ed8 | Legora | Partnership Associate 
+- [ ] https://jobs.ashbyhq.com/legora/0db5d2c8-f028-49b9-9404-92a654f15a52 | Legora | Legal AI Student Analyst
+- [ ] https://jobs.lever.co/palantir/a90eb029-19cc-413c-bd51-b8411053d7d4 | Palantir | Forward Deployed Enablement Engineer - Customer Success
+- [ ] https://jobs.lever.co/palantir/b57f08e9-546c-4b9b-8d21-db0ebbc11363 | Palantir | Forward Deployed Infrastructure Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/2a817317-48a6-48b7-9a74-a98ccd2457d2 | Palantir | Forward Deployed Software Engineer
+- [ ] https://jobs.lever.co/palantir/ce8ca664-60dc-4f9a-8986-3c96673bcfdf | Palantir | Forward Deployed Software Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/dea9d3d5-75b2-4588-b7bd-585a47b79c8c | Palantir | Software Engineer, New Grad
+- [ ] https://jobs.lever.co/palantir/da426d8b-5963-42e5-9b19-84649cb519cc | Palantir | Systems Engineer - Business Systems
+- [ ] https://jobs.lever.co/spotify/87ac8be9-799d-414f-b855-70a1cf2729b4 | Spotify | Data Engineer - Gen AI - Music
+- [ ] https://jobs.lever.co/qonto/0a53610a-ce0b-4d97-90e2-0ef3ecf51e0e | Qonto | People Systems Builder (AI/Automation)
+- [ ] https://jobs.lever.co/mistral/249d0ec9-1824-41cb-8c4f-cb17a1d5d111 | Mistral AI | Applied Scientist / Research Engineer, AI4Engineering - EMEA
+- [ ] https://jobs.lever.co/mistral/9a6c0605-8beb-4122-99c8-ae96beea691b | Mistral AI | Solutions Architect, Partner - EMEA
