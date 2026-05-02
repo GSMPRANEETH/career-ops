@@ -829,3 +829,21 @@
 - [ ] https://jobs.lever.co/qonto/0a53610a-ce0b-4d97-90e2-0ef3ecf51e0e | Qonto | People Systems Builder (AI/Automation)
 - [ ] https://jobs.lever.co/mistral/249d0ec9-1824-41cb-8c4f-cb17a1d5d111 | Mistral AI | Applied Scientist / Research Engineer, AI4Engineering - EMEA
 - [ ] https://jobs.lever.co/mistral/9a6c0605-8beb-4122-99c8-ae96beea691b | Mistral AI | Solutions Architect, Partner - EMEA
+
+- [ ] https://job-boards.greenhouse.io/intercom/jobs/7583139 | Intercom | Account Executive, Emerging AI Products
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5208218008 | Anthropic | AI Compliance Officer
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5031670008 | Anthropic | Applied AI Architect, Industries
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5206456008 | Anthropic | Research Engineer, Search and Knowledge Post-Training
+- [ ] https://jobs.ashbyhq.com/sierra/df431e56-56f5-42ed-bc62-7d6f7041bd27 | Sierra | Software Engineer, Agent
+- [ ] https://jobs.ashbyhq.com/sierra/1a0a0334-41f8-4c15-9ed8-615336855e5e | Sierra | Agent Engineer, TLM
+- [ ] https://jobs.ashbyhq.com/sierra/757f6d53-8849-46b5-b23e-184753c05e62 | Sierra | Strategist, Agent Development
+- [ ] https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254 | Cohere | Software Engineer Intern (Fall / Winter 2026)
+- [ ] https://jobs.ashbyhq.com/cohere/73bd3e2b-6597-4124-b64b-1e5dbc32e785 | Cohere | Research Internship (Fall / Winter 2026)
+- [ ] https://job-boards.eu.greenhouse.io/speechmatics/jobs/4823679101 | Speechmatics | Solutions Engineer
+- [ ] https://job-boards.greenhouse.io/later/jobs/8366756002 | Later | Domain Architect
+- [ ] https://sumup.com/careers/positions/8210399002?gh_jid=8210399002 | SumUp | Commercial Terrain - Indépendant (Freelance)
+- [ ] https://sumup.com/careers/positions/8518904002?gh_jid=8518904002 | SumUp | Junior Procure to Pay Accountant
+- [ ] https://jobs.lever.co/palantir/492a16bb-6b9f-457e-82c3-294e1a2c565d | Palantir | Forward Deployed Software Engineer
+- [ ] https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e | Palantir | Forward Deployed Software Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/df20ad9f-3d7f-4267-8e37-8253f717534a | Palantir | Systems Engineer - Business Systems
+- [ ] https://jobs.lever.co/spotify/8f98afe0-c436-41c7-b4c6-7e8bc6221332 | Spotify | Executive Assistant - Trust & Safety and Government Affairs
