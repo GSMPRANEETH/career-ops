@@ -847,3 +847,13 @@
 - [ ] https://jobs.lever.co/palantir/d83fac1c-353e-4b77-a586-3276b1090b6e | Palantir | Forward Deployed Software Engineer - US Government
 - [ ] https://jobs.lever.co/palantir/df20ad9f-3d7f-4267-8e37-8253f717534a | Palantir | Systems Engineer - Business Systems
 - [ ] https://jobs.lever.co/spotify/8f98afe0-c436-41c7-b4c6-7e8bc6221332 | Spotify | Executive Assistant - Trust & Safety and Government Affairs
+
+- [ ] https://jobs.ashbyhq.com/sierra/b89816c1-80b2-449b-b69e-2c261b8e9e23 | Sierra | Software Engineer, Agent
+- [ ] https://jobs.ashbyhq.com/sierra/99e82c10-977f-4b42-a737-2d9812ce614d | Sierra | Strategist, Agent Development
+- [ ] https://job-boards.greenhouse.io/later/jobs/8531688002 | Later |  ML Infrastructure Engineer
+- [ ] https://job-boards.greenhouse.io/later/jobs/8531693002 | Later | ML Infrastructure Engineer
+- [ ] https://sumup.com/careers/positions/7869734002?gh_jid=7869734002 | SumUp | Commercial Terrain - Indépendant (Freelance)
+- [ ] https://jobs.lever.co/palantir/5168e8fd-fec1-4fea-b7a1-81bdaea65850 | Palantir | Forward Deployed Software Engineer
+- [ ] https://jobs.lever.co/palantir/e82b696e-a085-4bbf-8bcb-6d2c4f8cf2f7 | Palantir | Forward Deployed Software Engineer - US Government
+- [ ] https://jobs.lever.co/palantir/e1d6117e-2ee0-4cf6-8040-256c3009389f | Palantir | Systems Engineer - Business Systems
+- [ ] https://jobs.lever.co/qonto/9585d054-ac1c-407d-94d0-598c4f9280b3 | Qonto | Events Intern - Spain 🇪🇸
