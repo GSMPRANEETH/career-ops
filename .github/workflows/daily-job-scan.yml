@@ -48,8 +48,8 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          # Force add the data directory so Git sees the new pipeline.md
-          git add -f data/
+          # Force add the data files so Git sees them even if ignored
+          git add -f data/pipeline.md data/scan-history.tsv data/applications.md || true
           if git diff --staged --quiet; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
@@ -62,14 +62,10 @@ jobs:
           git config --global user.name "Career-Ops-Bot"
           git config --global user.email "bot@career-ops.local"
 
-      - name: Stage changes
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: git add data/pipeline.md
-
       - name: Commit and push
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
-          git commit -m "🤖 Auto-scan: New India/Remote junior roles discovered - $(date +'%Y-%m-%d %H:%M IST')"
+          git commit -m "🤖 Auto-scan: New job leads and history update - $(date +'%Y-%m-%d %H:%M IST')"
           git push origin $(git rev-parse --abbrev-ref HEAD)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

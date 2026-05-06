@@ -17,6 +17,7 @@
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync } from 'fs';
 import yaml from 'js-yaml';
+import { chromium } from 'playwright';
 const parseYaml = yaml.load;
 
 // ── Config ──────────────────────────────────────────────────────────
@@ -105,6 +106,51 @@ function parseLever(json, companyName) {
 }
 
 const PARSERS = { greenhouse: parseGreenhouse, ashby: parseAshby, lever: parseLever };
+
+// ── Playwright scan ────────────────────────────────────────────────
+
+async function scanPlaywright(browser, company) {
+  const page = await browser.newPage();
+  const url = company.careers_url;
+  try {
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    // Give SPAs time to hydrate
+    await page.waitForTimeout(3000);
+
+    // Extract all links and try to find job-like ones
+    const jobs = await page.evaluate((companyName) => {
+      const candidates = [];
+      const links = Array.from(document.querySelectorAll('a'));
+
+      for (const link of links) {
+        const href = link.href;
+        const text = (link.innerText || '').trim();
+
+        // Heuristic for job links
+        const isJobLink = /\/(jobs?|postings?|positions?|careers?)\//i.test(href) ||
+                         /(\?|&)(job|posting|position|id)=/i.test(href) ||
+                         (text.length > 5 && text.length < 100 &&
+                          (link.closest('li') || link.closest('tr') || link.closest('.job-listing')));
+
+        if (isJobLink && href.startsWith('http') && text.length > 3) {
+          candidates.push({
+            title: text,
+            url: href,
+            company: companyName,
+            location: '', // harder to extract generically
+          });
+        }
+      }
+      return candidates;
+    }, company.name);
+
+    return jobs;
+  } catch (err) {
+    throw new Error(`Playwright error: ${err.message.split('\n')[0]}`);
+  } finally {
+    await page.close();
+  }
+}
 
 // ── Fetch with timeout ──────────────────────────────────────────────
 
@@ -265,23 +311,23 @@ async function main() {
   const companies = config.tracked_companies || [];
   const titleFilter = buildTitleFilter(config.title_filter);
 
-  // 2. Filter to enabled companies with detectable APIs
+  // 2. Filter targets
   const targets = companies
     .filter(c => c.enabled !== false)
     .filter(c => !filterCompany || c.name.toLowerCase().includes(filterCompany))
-    .map(c => ({ ...c, _api: detectApi(c) }))
-    .filter(c => c._api !== null);
+    .map(c => ({ ...c, _api: detectApi(c) }));
 
-  const skippedCount = companies.filter(c => c.enabled !== false).length - targets.length;
+  const apiTargets = targets.filter(c => c._api !== null);
+  const pwTargets = targets.filter(c => c._api === null && c.careers_url);
 
-  console.log(`Scanning ${targets.length} companies via API (${skippedCount} skipped — no API detected)`);
+  console.log(`Scanning ${apiTargets.length} companies via API and ${pwTargets.length} via Playwright`);
   if (dryRun) console.log('(dry run — no files will be written)\n');
 
   // 3. Load dedup sets
   const seenUrls = loadSeenUrls();
   const seenCompanyRoles = loadSeenCompanyRoles();
 
-  // 4. Fetch all APIs
+  // 4. Fetch all
   const date = new Date().toISOString().slice(0, 10);
   let totalFound = 0;
   let totalFiltered = 0;
@@ -289,38 +335,63 @@ async function main() {
   const newOffers = [];
   const errors = [];
 
-  const tasks = targets.map(company => async () => {
+  // API Tasks
+  const apiTasks = apiTargets.map(company => async () => {
     const { type, url } = company._api;
     try {
       const json = await fetchJson(url);
       const jobs = PARSERS[type](json, company.name);
-      totalFound += jobs.length;
-
-      for (const job of jobs) {
-        if (!titleFilter(job.title)) {
-          totalFiltered++;
-          continue;
-        }
-        if (seenUrls.has(job.url)) {
-          totalDupes++;
-          continue;
-        }
-        const key = `${job.company.toLowerCase()}::${job.title.toLowerCase()}`;
-        if (seenCompanyRoles.has(key)) {
-          totalDupes++;
-          continue;
-        }
-        // Mark as seen to avoid intra-scan dupes
-        seenUrls.add(job.url);
-        seenCompanyRoles.add(key);
-        newOffers.push({ ...job, source: `${type}-api` });
-      }
+      processJobs(jobs, `${type}-api`);
     } catch (err) {
       errors.push({ company: company.name, error: err.message });
     }
   });
 
-  await parallelFetch(tasks, CONCURRENCY);
+  // Playwright Tasks
+  let browser;
+  if (pwTargets.length > 0) {
+    browser = await chromium.launch({ headless: true });
+  }
+
+  const pwTasks = pwTargets.map(company => async () => {
+    try {
+      const jobs = await scanPlaywright(browser, company);
+      processJobs(jobs, 'playwright');
+    } catch (err) {
+      errors.push({ company: company.name, error: err.message });
+    }
+  });
+
+  function processJobs(jobs, source) {
+    totalFound += jobs.length;
+    for (const job of jobs) {
+      if (!titleFilter(job.title)) {
+        totalFiltered++;
+        continue;
+      }
+      if (seenUrls.has(job.url)) {
+        totalDupes++;
+        continue;
+      }
+      const key = `${job.company.toLowerCase()}::${job.title.toLowerCase()}`;
+      if (seenCompanyRoles.has(key)) {
+        totalDupes++;
+        continue;
+      }
+      // Mark as seen to avoid intra-scan dupes
+      seenUrls.add(job.url);
+      seenCompanyRoles.add(key);
+      newOffers.push({ ...job, source });
+    }
+  }
+
+  await parallelFetch(apiTasks, CONCURRENCY);
+  // Run PW tasks sequentially to avoid resource issues and follow project rules
+  for (const task of pwTasks) {
+    await task();
+  }
+
+  if (browser) await browser.close();
 
   // 5. Write results
   if (!dryRun && newOffers.length > 0) {
