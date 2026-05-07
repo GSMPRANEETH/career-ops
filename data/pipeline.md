@@ -1,6 +1,14 @@
 
 ## Pendientes
 
+- [ ] https://boards.greenhouse.io/karat/jobs/4414444005 | Karat | Software Engineer (SWE3) - India
+- [ ] https://boards.greenhouse.io/conga/jobs/4321004 | Conga | Associate Software Engineer, AI - Bangalore
+- [ ] https://jobs.ashbyhq.com/furtherai | FurtherAI | Software Engineer (Backend/Fullstack - India)
+- [ ] https://jobs.ashbyhq.com/ema | Ema | Software Engineer, AI Applications - Bangalore
+- [ ] https://jobs.ashbyhq.com/flagright | Flagright | Software Engineer - Bangalore
+- [ ] https://jobs.ashbyhq.com/cartesia | Cartesia | Software Engineer, Platform (India)
+- [ ] https://fadv.com/careers/ | First Advantage | AI Engineer / Associate AI Engineer - Bangalore
+- [ ] https://www.zimmerbiomet.com/en/about-us/careers.html | Zimmer Biomet | AI Software Engineer - Bangalore
 - [ ] https://job-boards.eu.greenhouse.io/polyai/jobs/4802138101 | PolyAI | Agent Designer
 - [ ] https://job-boards.eu.greenhouse.io/polyai/jobs/4855037101 | PolyAI | Forward Deployed AI Engineer (Must be based in Toronto, Canada)
 - [ ] https://job-boards.eu.greenhouse.io/polyai/jobs/4796935101 | PolyAI | Forward Deployed AI Engineer (Must be PST timezone)
@@ -857,3 +865,6 @@
 - [ ] https://jobs.lever.co/palantir/e82b696e-a085-4bbf-8bcb-6d2c4f8cf2f7 | Palantir | Forward Deployed Software Engineer - US Government
 - [ ] https://jobs.lever.co/palantir/e1d6117e-2ee0-4cf6-8040-256c3009389f | Palantir | Systems Engineer - Business Systems
 - [ ] https://jobs.lever.co/qonto/9585d054-ac1c-407d-94d0-598c4f9280b3 | Qonto | Events Intern - Spain 🇪🇸
+- [ ] https://wbd.wd5.myworkdayjobs.com/en-US/WBD_Careers/job/Software-Engineer-II---Platform-Engineering--Observability-Team-_R000084537 | Warner Bros. Discovery | Software Engineer II - Platform Engineering (Observability Team)
+- [ ] https://empower.wd1.myworkdayjobs.com/Empower_Careers/job/Bengaluru-India/Software-Engineer_R10123 | Empower | Software Engineer
+- [ ] https://www.wellsfargojobs.com/en/jobs/r-365421/software-engineer-ai-agentic-systems/ | Wells Fargo | Software Engineer (AI/Agentic Systems)
