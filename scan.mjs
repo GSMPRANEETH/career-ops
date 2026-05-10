@@ -231,10 +231,11 @@ function loadSeenCompanyRoles() {
 
 // ── Pipeline writer ─────────────────────────────────────────────────
 
-function appendToPipeline(offers) {
-  if (offers.length === 0) return;
-
+function appendToPipeline(offers, timestamp) {
   let text = readFileSync(PIPELINE_PATH, 'utf-8');
+
+  const logComment = `\n<!-- Run: ${timestamp} | URLs Fetched: ${offers.length} -->\n` +
+    (offers.length > 0 ? `<!--\nFetched URLs:\n${offers.map(o => `- ${o.url}`).join('\n')}\n-->\n` : '');
 
   // Find "## Pendientes" section and append after it
   const marker = '## Pendientes';
@@ -243,9 +244,15 @@ function appendToPipeline(offers) {
     // No Pendientes section — append at end before Procesadas
     const procIdx = text.indexOf('## Procesadas');
     const insertAt = procIdx === -1 ? text.length : procIdx;
-    const block = `\n${marker}\n\n` + offers.map(o =>
-      `- [ ] ${o.url} | ${o.company} | ${o.title}`
-    ).join('\n') + '\n\n';
+
+    let block = `\n${marker}\n${logComment}`;
+    if (offers.length > 0) {
+      block += offers.map(o =>
+        `- [ ] ${o.url} | ${o.company} | ${o.title}`
+      ).join('\n') + '\n\n';
+    } else {
+      block += '\n';
+    }
     text = text.slice(0, insertAt) + block + text.slice(insertAt);
   } else {
     // Find the end of existing Pendientes content (next ## or end)
@@ -253,9 +260,12 @@ function appendToPipeline(offers) {
     const nextSection = text.indexOf('\n## ', afterMarker);
     const insertAt = nextSection === -1 ? text.length : nextSection;
 
-    const block = '\n' + offers.map(o =>
-      `- [ ] ${o.url} | ${o.company} | ${o.title}`
-    ).join('\n') + '\n';
+    let block = `${logComment}`;
+    if (offers.length > 0) {
+      block += offers.map(o =>
+        `- [ ] ${o.url} | ${o.company} | ${o.title}`
+      ).join('\n') + '\n';
+    }
     text = text.slice(0, insertAt) + block + text.slice(insertAt);
   }
 
@@ -319,8 +329,9 @@ async function main() {
 
   const apiTargets = targets.filter(c => c._api !== null);
   const pwTargets = targets.filter(c => c._api === null && c.careers_url);
+  const queryTargets = config.search_queries?.filter(q => q.enabled && q.url) || [];
 
-  console.log(`Scanning ${apiTargets.length} companies via API and ${pwTargets.length} via Playwright`);
+  console.log(`Scanning ${apiTargets.length} companies via API, ${pwTargets.length} via Playwright, and ${queryTargets.length} portal URLs`);
   if (dryRun) console.log('(dry run — no files will be written)\n');
 
   // 3. Load dedup sets
@@ -349,7 +360,7 @@ async function main() {
 
   // Playwright Tasks
   let browser;
-  if (pwTargets.length > 0) {
+  if (pwTargets.length > 0 || queryTargets.length > 0) {
     browser = await chromium.launch({ headless: true });
   }
 
@@ -359,6 +370,15 @@ async function main() {
       processJobs(jobs, 'playwright');
     } catch (err) {
       errors.push({ company: company.name, error: err.message });
+    }
+  });
+
+  const queryTasks = queryTargets.map(query => async () => {
+    try {
+      const jobs = await scanPlaywright(browser, { name: query.name, careers_url: query.url || query.query });
+      processJobs(jobs, 'portal-scan');
+    } catch (err) {
+      errors.push({ company: query.name, error: err.message });
     }
   });
 
@@ -386,17 +406,20 @@ async function main() {
   }
 
   await parallelFetch(apiTasks, CONCURRENCY);
-  // Run PW tasks sequentially to avoid resource issues and follow project rules
-  for (const task of pwTasks) {
+  // Run PW tasks and query tasks sequentially to avoid resource issues
+  for (const task of [...pwTasks, ...queryTasks]) {
     await task();
   }
 
   if (browser) await browser.close();
 
   // 5. Write results
-  if (!dryRun && newOffers.length > 0) {
-    appendToPipeline(newOffers);
-    appendToScanHistory(newOffers, date);
+  if (!dryRun) {
+    const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+    appendToPipeline(newOffers, timestamp);
+    if (newOffers.length > 0) {
+      appendToScanHistory(newOffers, date);
+    }
   }
 
   // 6. Print summary
