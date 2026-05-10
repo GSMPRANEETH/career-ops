@@ -1,8 +1,6 @@
 
 ## Pendientes
 
-- [ ] https://boards.greenhouse.io/karat/jobs/4414444005 | Karat | Software Engineer (SWE3) - India
-- [ ] https://boards.greenhouse.io/conga/jobs/4321004 | Conga | Associate Software Engineer, AI - Bangalore
 - [ ] https://jobs.ashbyhq.com/furtherai | FurtherAI | Software Engineer (Backend/Fullstack - India)
 - [ ] https://jobs.ashbyhq.com/ema | Ema | Software Engineer, AI Applications - Bangalore
 - [ ] https://jobs.ashbyhq.com/flagright | Flagright | Software Engineer - Bangalore
@@ -868,3 +866,20 @@
 - [ ] https://wbd.wd5.myworkdayjobs.com/en-US/WBD_Careers/job/Software-Engineer-II---Platform-Engineering--Observability-Team-_R000084537 | Warner Bros. Discovery | Software Engineer II - Platform Engineering (Observability Team)
 - [ ] https://empower.wd1.myworkdayjobs.com/Empower_Careers/job/Bengaluru-India/Software-Engineer_R10123 | Empower | Software Engineer
 - [ ] https://www.wellsfargojobs.com/en/jobs/r-365421/software-engineer-ai-agentic-systems/ | Wells Fargo | Software Engineer (AI/Agentic Systems)
+
+<!-- Run: 10/5/2026, 9:05:50 am | URLs Fetched: 0 -->
+
+<!-- Run: 10/5/2026, 9:06:10 am | URLs Fetched: 0 -->
+
+<!-- Run: 10/5/2026, 9:06:33 am | URLs Fetched: 0 -->
+
+<!-- Run: 10/5/2026, 9:06:53 am | URLs Fetched: 1 -->
+<!--
+Fetched URLs:
+- https://example.com/dummy
+-->
+- [ ] https://example.com/dummy | Dummy Co | Dummy Job
+
+## Procesadas
+- [x] #016 | https://boards.greenhouse.io/karat/jobs/4414444005 | Karat | Software Engineer (SWE3) - India | 2.8/5 | PDF ?
+- [x] #017 | https://boards.greenhouse.io/conga/jobs/4321004 | Conga | Associate Software Engineer, AI - Bangalore | 4.8/5 | PDF ?
