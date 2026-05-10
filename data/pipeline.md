@@ -880,6 +880,8 @@ Fetched URLs:
 -->
 - [ ] https://example.com/dummy | Dummy Co | Dummy Job
 
+<!-- Run: 10/5/2026, 9:18:29 am | URLs Fetched: 0 -->
+
 ## Procesadas
 - [x] #016 | https://boards.greenhouse.io/karat/jobs/4414444005 | Karat | Software Engineer (SWE3) - India | 2.8/5 | PDF ?
 - [x] #017 | https://boards.greenhouse.io/conga/jobs/4321004 | Conga | Associate Software Engineer, AI - Bangalore | 4.8/5 | PDF ?
